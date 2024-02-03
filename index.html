@@ -7,6 +7,65 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <h1 class="text-3xl">Simple Tailwind Starter</h1>
+    <!-- global container -->
+    <div class="bg-rose-100 min-h-screen flex justify-center items-center">
+      <!-- login modal contrainer -->
+      <div class="flex mx-3 bg-white rounded-xl">
+        <!-- form side -->
+        <div class="p-16 flex flex-col gap-2">
+          <div class="text-3xl font-bold font-mono">Log In</div>
+          <div class="font-light mt-4 w-3/4">
+            Log in to your account to upload or download pictures, videos or
+            music.
+          </div>
+          <input
+            type="text"
+            class="py-6 px-5 w-full border border-slate-200 rounded-lg mt-9"
+            placeholder="Enter your email address"
+          />
+          <!-- forgot password and next button -->
+          <div
+            class="flex justify-between items-center border-gray-300 border-b pb-12 mt-6"
+          >
+            <div class="font-light text-cyan-700">Forgot password</div>
+            <button
+              class="bg-cyan-700 flex flex-row gap-4 text-white font-bold py-7 px-9 rounded-lg shadow-md hover:bg-cyan-600 hover:-translate-y-1 hover:shadow-xl hover:shadow-cyan-100 transition duration-300"
+            >
+              <div>Next</div>
+              <div>
+                <img src="./arrow-right.svg" class="text-white w-6" />
+              </div>
+            </button>
+          </div>
+          <!-- Third party authentication -->
+          <div class="font-light text-sm w-full text-center text-slate-400">
+            or log in with
+          </div>
+          <!-- facebook and Google buttons -->
+          <div class="flex flex-col md:flex-row w-full justify-between">
+            <div
+              class="button border border-slate-300 rounded-md shadow-md hover:shadow-xl hover:-translate-y-1 flex items-center gap-3 px-10 py-2 tranisiton duration-300 cursor-pointer"
+            >
+              <img src="./images/facebook.png" class="w-12 h-12" />
+              <span class="font-light text-xl">Facebook</span>
+            </div>
+            <div
+              class="button border border-slate-300 rounded-md shadow-md hover:shadow-xl hover:-translate-y-1 flex items-center gap-3 px-10 py-2 tranisiton duration-300 cursor-pointer"
+            >
+              <img src="./images/Google.png" class="w-12 h-12" />
+              <span class="font-light text-xl">Google</span>
+            </div>
+          </div>
+        </div>
+        <!-- modal main image -->
+        <div>
+          <img
+            src="./images/image.jpg"
+            alt="main modal image"
+            class="w-[430px] rounded-r-xl"
+          />
+        </div>
+      </div>
+    </div>
   </body>
 </html>
